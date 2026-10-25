@@ -1,0 +1,4 @@
+{"info":{"name":"ChatGPT Clone","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+"item":[{"name":"Chat (new or existing conversation)","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],
+"url":{"raw":"http://localhost:8000/api/chat","protocol":"http","host":["localhost"],"port":"8000","path":["api","chat"]},
+"body":{"mode":"raw","raw":"{\n  \"message\": \"Tell me a one-liner programming joke\",\n  \"conversation_id\": null\n}"}}}]}
