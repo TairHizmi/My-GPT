@@ -1,0 +1,74 @@
+{
+  "info": {
+    "_postman_id": "413154b8-6e36-4c6e-8cdf-289892c9c8d8",
+    "name": "ChatGPT Clone",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52310446",
+    "_collection_link": "https://go.postman.co/collection/52310446-413154b8-6e36-4c6e-8cdf-289892c9c8d8?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Chat (new or existing conversation)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"message\": \"Tell me a one-liner programming joke\",\n  \"conversation_id\": null\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/chat",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "chat"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Chat (new or existing conversation) Copy",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "   {\n     \"message\": \"still one-liner, but change the subject\",\n     \"conversation_id\": \"fb2cf735-028e-43a4-841b-aef510eb9141\"\n   }",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/chat",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "chat"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
